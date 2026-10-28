@@ -1,0 +1,26 @@
+site_name: Lynis for Mere Mortals
+site_description: A security auditor that reads a Unix system and reports what it finds. Running a Lynis audit, reading its warnings and suggestions with their test IDs, understanding the hardening index without worshipping it, and tuning profiles so the report stays worth reading, with the limits stated plainly.
+site_url: https://paulsullivan33-dev.github.io/lynis-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What Lynis Is: what-lynis-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing Lynis: installing-lynis.md
+  - Your First Audit: your-first-audit.md
+  - Reading the Results: reading-the-results.md
+  - One Finding, End to End: one-finding-end-to-end.md
+  - Profiles, Skipping, and Tuning: profiles-and-skipping.md
+  - Auditing Again: auditing-again.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

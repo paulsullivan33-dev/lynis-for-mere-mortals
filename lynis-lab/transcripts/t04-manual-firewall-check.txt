@@ -1,0 +1,13 @@
+$ lsmod | grep -i "^ip"
+libkmod: ERROR ../libkmod/libkmod-module.c:1762 kmod_module_new_from_loaded: could not open /proc/modules: No such file or directory
+Error: could not get list of modules: No such file or directory
+$ iptables -L -n
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+$ cat /proc/net/ip_tables_names

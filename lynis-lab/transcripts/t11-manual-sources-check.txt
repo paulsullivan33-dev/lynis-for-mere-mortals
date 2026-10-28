@@ -1,0 +1,7 @@
+$ ls /etc/apt/sources.list.d/
+github-cli.sources
+nodesource.sources
+ubuntu.sources
+$ grep -E "URIs|Suites" /etc/apt/sources.list.d/ubuntu.sources
+URIs: http://azure.archive.ubuntu.com/ubuntu http://mirror.cogentco.com/pub/linux/ubuntu
+Suites: noble noble-updates noble-backports noble-security

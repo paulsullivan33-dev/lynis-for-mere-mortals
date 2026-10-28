@@ -1,0 +1,23 @@
+$ grep -E "^(hardening_index|warning|suggestion)" t01c-report.dat | sort > before.txt
+$ grep -E "^(hardening_index|warning|suggestion)" t09-profile-report.dat | sort > after.txt
+$ diff before.txt after.txt
+1,24d0
+< hardening_index=67
+< suggestion[]=ACCT-9622|Enable process accounting|-|-|
+< suggestion[]=ACCT-9626|Enable sysstat to collect accounting (disabled)|-|-|
+< suggestion[]=ACCT-9628|Enable auditd to collect audit information|-|-|
+< suggestion[]=BANN-7126|Add a legal banner to /etc/issue, to warn unauthorized users|-|-|
+< suggestion[]=BANN-7130|Add legal banner to /etc/issue.net, to warn unauthorized users|-|-|
+< suggestion[]=FILE-7524|Consider restricting file permissions|See screen output or log file|text:Use chmod to change file permissions|
+< suggestion[]=FINT-4350|Install a file integrity tool to monitor changes to critical and sensitive files|-|-|
+< suggestion[]=HOME-9304|Double check the permissions of home directories as some might be not strict enough.|-|-|
+< suggestion[]=HRDN-7222|Harden compilers like restricting access to root user only|-|-|
+< suggestion[]=HRDN-7230|Harden the system by installing at least one malware scanner, to perform periodic file system scans|-|Install a tool like rkhunter, chkrootkit, OSSEC, Wazuh|
+< suggestion[]=KRNL-6000|One or more sysctl values differ from the scan profile and could be tweaked||Change sysctl value or disable test (skip-test=KRNL-6000:<sysctl-key>)|
+< suggestion[]=LOGG-2154|Enable logging to an external logging host for archiving purposes and additional protection|-|-|
+< suggestion[]=MACF-6208|Check output of aa-status|/sys/kernel/security/apparmor/profiles|text:Run aa-status|
+< suggestion[]=NETW-3200|Determine if protocol 'dccp' is really needed on this system|-|-|
+< suggestion[]=NETW-3200|Determine if protocol 'rds' is really needed on this system|-|-|
+< suggestion[]=NETW-3200|Determine if protocol 'sctp' is really needed on this system|-|-|
+< suggestion[]=NETW-3200|Determine if protocol 'tipc' is really needed on this system|-|-|
+< suggestion[]=PHP-2376|Change the allow_url_fopen line to: allow_url_fopen = Off, to disable downloads via PHP|-|-|

@@ -1,0 +1,13 @@
+$ ./lynis audit system --tests-from-group firewalls --quick --no-colors
+  -[ Lynis 3.1.7 Results ]-
+
+  Warnings (1):
+  ----------------------------
+  ! iptables module(s) loaded, but no rules active [FIRE-4512] 
+      https://cisofy.com/lynis/controls/FIRE-4512/
+
+  No suggestions
+
+  Follow-up:
+  ----------------------------
+  - Show details of a test (lynis show details TEST-ID)

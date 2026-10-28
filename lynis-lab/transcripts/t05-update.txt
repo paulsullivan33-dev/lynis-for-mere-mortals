@@ -1,0 +1,18 @@
+$ ./lynis update info
+
+ == [1;37mLynis[0m ==
+
+  Version            : 3.1.7
+  Status             : [1;31mUnknown[0m
+  Release date       : 2026-06-25
+  Project page       : https://cisofy.com/lynis/
+  Source code        : https://github.com/CISOfy/lynis
+  Latest package     : https://packages.cisofy.com/
+
+
+2007-2025, CISOfy - https://cisofy.com/lynis/
+
+
+$ ./lynis --check-update   (the flag older guides mention)
+This option (--info) is deprecated
+Use: lynis update info

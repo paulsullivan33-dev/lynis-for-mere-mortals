@@ -1,0 +1,20 @@
+$ ./lynis audit system --tests-from-group firewalls --quick --no-colors --profile ../custom.prf --auditor "Guide Lab"
+  -[ Lynis 3.1.7 Results ]-
+
+  Great, no warnings
+
+  No suggestions
+
+================================================================================
+
+  Lynis security scan details:
+
+
+$ grep -E "^auditor|warning" /var/log/lynis-report.dat
+auditor=Guide Lab
+
+$ grep -B1 -A2 "Skipped test FIRE-4512" /var/log/lynis.log
+2026-10-28 18:51:18 ====
+2026-10-28 18:51:18 Skipped test FIRE-4512 (Check iptables for empty ruleset)
+2026-10-28 18:51:18 Reason to skip: Skipped by profile setting (skip-test)
+2026-10-28 18:51:18 ====

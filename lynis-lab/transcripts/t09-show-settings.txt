@@ -1,0 +1,26 @@
+$ ./lynis show settings
+[0;37m# Colored screen output[0m
+[1;37mcolors[0m=[0;36m1[0m
+
+[0;37m# Compressed uploads[0m
+[1;37mcompressed-uploads[0m=[0;36m0[0m
+
+[0;37m# Use non-zero exit code if one or more warnings were found[0m
+[1;37merror-on-warnings[0m=[0;36m0[0m
+
+[0;37m# Language[0m
+[1;37mlanguage[0m=[0;36men[0m
+
+[0;37m# License key[0m
+[1;37mlicense-key[0m=[0;36m[0;37m[not configured][0m[0m
+
+[0;37m# Logging of tests that have a different OS[0m
+[1;37mlog-tests-incorrect-os[0m=[0;36m1[0m
+
+[0;37m# Machine role (personal, workstation or server)[0m
+[1;37mmachine-role[0m=[0;36mserver[0m
+
+[0;37m# Pause between tests (in seconds)[0m
+[1;37mpause-between-tests[0m=[0;36m0[0m
+
+[0;37m# Quick mode (non-interactive)[0m

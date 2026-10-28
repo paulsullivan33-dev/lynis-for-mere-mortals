@@ -1,0 +1,19 @@
+$ ./lynis show details FIRE-4512
+2026-10-28 18:48:20 Performing test ID FIRE-4512 (Check iptables for empty ruleset)
+2026-10-28 18:48:20 Result: iptables ruleset seems to be empty (found 0 rules)
+2026-10-28 18:48:20 Warning: iptables module(s) loaded, but no rules active [test:FIRE-4512] [details:-] [solution:-]
+2026-10-28 18:48:20 ====
+
+$ ./lynis show details PKGS-7392
+2026-10-28 18:42:35 Performing test ID PKGS-7392 (Check for Debian/Ubuntu security updates)
+2026-10-28 18:42:35 Action: updating package repository with apt-get
+2026-10-28 18:48:10 Result: apt-get finished
+2026-10-28 18:48:10 Test: Checking if /usr/lib/update-notifier/apt-check exists
+2026-10-28 18:48:10 Result: apt-check (update-notifier-common) not found
+2026-10-28 18:48:12 Result: found vulnerable package(s) via apt-get (-security channel)
+2026-10-28 18:48:12 Found vulnerable package: libbrotli-dev
+2026-10-28 18:48:12 Found vulnerable package: libbrotli1
+2026-10-28 18:48:12 Found vulnerable package: python3-brotli
+2026-10-28 18:48:12 Warning: Found one or more vulnerable packages. [test:PKGS-7392] [details:-] [solution:-]
+2026-10-28 18:48:12 Suggestion: Update your system with apt-get update, apt-get upgrade, apt-get dist-upgrade and/or unattended-upgrades [test:PKGS-7392] [details:-] [solution:-]
+2026-10-28 18:48:12 ====

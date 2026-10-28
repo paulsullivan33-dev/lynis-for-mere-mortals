@@ -1,0 +1,5 @@
+$ ./lynis audit system --tests FIRE-4512 --quick --no-colors
+  -[ Lynis 3.1.7 Results ]-
+
+  Great, no warnings
+

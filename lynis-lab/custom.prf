@@ -1,0 +1,6 @@
+# custom.prf - lab profile for the guide
+# Skip the empty-iptables warning: this sandbox has no firewall
+# rules by design, and the finding is already understood.
+skip-test=FIRE-4512
+# Do not refresh package repositories during an audit
+refresh-repositories=no
